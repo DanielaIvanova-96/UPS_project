@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="443.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <HBox prefHeight="102.0" prefWidth="754.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="101.0" prefWidth="252.0" text="CORONA" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+               <effect>
+                  <Blend mode="DARKEN">
+                     <topInput>
+                        <SepiaTone />
+                     </topInput>
+                  </Blend>
+               </effect>
+            </Label>
+            <ImageView fitHeight="102.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/crown_100px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <AnchorPane id="pn_homepage" fx:id="pn_homepage" cacheHint="SCALE" layoutY="102.0" prefHeight="388.0" prefWidth="784.0" style="-fx-background-color: #4DB6AC;">
+         <children>
+            <Pane fx:id="pn_dragon" layoutX="14.0" layoutY="14.0" prefHeight="169.0" prefWidth="365.0">
+               <children>
+                  <ImageView fitHeight="137.0" fitWidth="140.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@shala.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="155.0" layoutY="22.0" prefHeight="34.0" prefWidth="202.0" text="How to train you dragon">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="155.0" layoutY="68.0" prefHeight="34.0" prefWidth="202.0" text="Writers:  Dean DeBlois, Cressida Cowell" />
+                  <Button fx:id="btn_dragon_11" layoutX="155.0" layoutY="118.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="92.0" text="11:15">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_dragon_15" layoutX="265.0" layoutY="118.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="92.0" text="15:30">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="pn_green" layoutX="14.0" layoutY="189.0" prefHeight="182.0" prefWidth="365.0">
+               <children>
+                  <ImageView fitHeight="169.0" fitWidth="152.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@avengers.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="162.0" layoutY="30.0" text="Avengers: Endgame">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="162.0" layoutY="83.0" text="Writers: Christopher Markus" />
+                  <Button fx:id="btn_endgame_12" layoutX="154.0" layoutY="133.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="92.0" text="12:20">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_endgame_18" layoutX="260.0" layoutY="133.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="92.0" text="18:10">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <Pane fx:id="pn_lion" layoutX="402.0" layoutY="14.0" prefHeight="182.0" prefWidth="381.0">
+               <children>
+                  <ImageView fitHeight="169.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@lion.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="136.0" layoutY="14.0" text="The Lion King">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="136.0" layoutY="59.0" text="Writers: Irene Mecchi, Jonathan Roberts" />
+                  <Button fx:id="btn_lion_10" layoutX="136.0" layoutY="113.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="92.0" text="10:30">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btn_lion_15" layoutX="241.0" layoutY="113.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="92.0" text="15:00">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children></Pane>
+            <JFXButton fx:id="btn_popular" buttonType="RAISED" layoutX="475.0" layoutY="318.0" prefHeight="34.0" prefWidth="279.0" text="Most popular movie">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+         </children></AnchorPane>
+      <AnchorPane id="pn_ticket" fx:id="pn_ticket" layoutY="109.0" prefHeight="348.0" prefWidth="784.0" style="-fx-background-color: #4DB6AC;" visible="false">
+         <children>
+
+            <AnchorPane prefHeight="377.0" prefWidth="252.0">
+               <children>
+                  <Label layoutY="-4.0" prefHeight="55.0" prefWidth="186.0" text="Стандартен:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton id="btn_st_plus" fx:id="btn_standart_plus" buttonType="RAISED" layoutX="-14.0" layoutY="32.0" onAction="#buttonAction" prefHeight="71.0" prefWidth="64.0">
+                        <graphic>
+                           <ImageView>
+                              <image>
+                                 <Image url="@/plus_math_26px.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                  </JFXButton>
+                  <JFXButton id="btn_st_minus" fx:id="btn_standart_minus" buttonType="RAISED" layoutX="116.0" layoutY="32.0" onAction="#buttonAction" prefHeight="71.0" prefWidth="64.0">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@/subtract_26px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutY="109.0" prefHeight="55.0" prefWidth="186.0" text="Ученици/Студенти:">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <JFXButton id="btn_student_plus" fx:id="btn_student_plus" buttonType="RAISED" layoutX="-14.0" layoutY="156.0" onAction="#buttonAction" prefHeight="71.0" prefWidth="64.0">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@/plus_math_26px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="btn_student_minus" buttonType="RAISED" layoutX="116.0" layoutY="156.0" onAction="#buttonAction" prefHeight="71.0" prefWidth="64.0">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@/subtract_26px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <Label layoutY="224.0" prefHeight="44.0" prefWidth="186.0" text="Детски:">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton id="btn_kid_plus" fx:id="btn_kid_plus" buttonType="RAISED" layoutX="-14.0" layoutY="258.0" onAction="#buttonAction" prefHeight="71.0" prefWidth="64.0">
+                      <graphic>
+                          <ImageView layoutX="-2.0" layoutY="260.0">
+                              <image>
+                                  <Image url="@/plus_math_26px.png" />
+                              </image>
+                          </ImageView>
+                      </graphic>
+                  </JFXButton>
+                  <JFXButton id="btn_kid_minus" fx:id="btn_kid_minus" buttonType="RAISED" layoutX="116.0" layoutY="258.0" onAction="#buttonAction" prefHeight="71.0" prefWidth="64.0">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@/subtract_26px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <TextField id="tb_standart" fx:id="tb_standart" alignment="CENTER" editable="false" layoutX="57.0" layoutY="51.0" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #4DB6AC;" text="0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font></TextField>
+                  <TextField id="tb_student" fx:id="tb_student" alignment="CENTER" editable="false" layoutX="57.0" layoutY="160.0" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #4DB6AC;" text="0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font></TextField>
+                  <TextField id="tb_kid" fx:id="tb_kid" alignment="CENTER" editable="false" layoutX="57.0" layoutY="267.0" prefHeight="25.0" prefWidth="45.0" style="-fx-background-color: #4DB6AC;" text="0">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font></TextField>
+
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="80.0" fitWidth="487.0" layoutX="239.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@screen.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="btn_3_1" layoutX="239.0" layoutY="223.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                          <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_2_1" layoutX="239.0" layoutY="164.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_1_1" layoutX="239.0" layoutY="111.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_3_2" layoutX="308.0" layoutY="223.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_2_2" layoutX="308.0" layoutY="164.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_1_2" layoutX="308.0" layoutY="111.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_2_4" layoutX="440.0" layoutY="164.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_2_3" layoutX="375.0" layoutY="164.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_1_3" layoutX="371.0" layoutY="111.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_1_4" layoutX="440.0" layoutY="111.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_1_5" layoutX="509.0" layoutY="111.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_2_5" layoutX="509.0" layoutY="164.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_3_3" layoutX="375.0" layoutY="223.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_3_4" layoutX="440.0" layoutY="223.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_3_5" layoutX="509.0" layoutY="223.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_3_6" layoutX="569.0" layoutY="223.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_2_6" layoutX="569.0" layoutY="164.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btn_1_6" layoutX="569.0" layoutY="111.0" prefHeight="44.0" prefWidth="60.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/armchair_60px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="322.0" prefHeight="31.0" prefWidth="213.0" text="SCREEN">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_config" buttonType="RAISED" layoutX="500.0" layoutY="307.0" prefHeight="34.0" prefWidth="245.0" text="Config the reservation">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btn_back" buttonType="RAISED" layoutX="676.0" layoutY="22.0" prefHeight="34.0" prefWidth="83.0">
+                <graphic>
+                    <ImageView>
+                        <image>
+                            <Image url="@/go_back_26px.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

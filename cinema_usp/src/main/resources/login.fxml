@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="pn_home" fx:id="pn_home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="390.0" prefWidth="286.0">
+         <children>
+            <ImageView fitHeight="287.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/Movie-time-design-elements-vector-backgrounds-05.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="44.0" prefWidth="284.0" text="Welcome to" textFill="#222f3e">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="283.0" text="CORONA" textAlignment="CENTER" textFill="#222f3e">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="283.0" prefHeight="390.0" prefWidth="388.0">
+         <children>
+            <AnchorPane id="pn_login" fx:id="pn_login" prefHeight="390.0" prefWidth="393.0" style="-fx-background-color: #4DB6AC;">
+               <children>
+                  <JFXTextField id="tb_login_email" fx:id="tb_login_email" focusColor="#444750" layoutX="56.0" layoutY="94.0" prefHeight="38.0" prefWidth="270.0" promptText="email">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField id="tb_login_pass" fx:id="tb_login_pass" focusColor="#444750" layoutX="56.0" layoutY="161.0" prefHeight="38.0" prefWidth="270.0" promptText="password">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXButton id="btn_login" fx:id="btn_login" buttonType="RAISED" layoutX="56.0" layoutY="231.0" onAction="#login" prefHeight="38.0" prefWidth="270.0" text="Login">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXButton>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="19.0" prefHeight="44.0" prefWidth="284.0" text="Welcome back" textFill="#222f3e">
+                     <font>
+                        <Font name="System Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="82.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/crown_100px.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton id="btn_signin" fx:id="btn_signin" buttonType="RAISED" layoutX="56.0" layoutY="282.0" onAction="#signin" prefHeight="38.0" prefWidth="270.0" text="SignIn">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane id="pn_signin" fx:id="pn_signin" prefHeight="390.0" prefWidth="393.0" style="-fx-background-color: #4DB6AC;" visible="false">
+               <children>
+                  <JFXTextField id="tb_signin_email" fx:id="tb_signin_email" focusColor="#484d5a" layoutX="48.0" layoutY="120.0" prefHeight="44.0" prefWidth="262.0" promptText="email">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXTextField>
+                  <JFXPasswordField id="tb_signin_pass_r" fx:id="tb_signin_pass_r" focusColor="#484d5a" layoutX="48.0" layoutY="244.0" prefHeight="38.0" prefWidth="262.0" promptText="confing password">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXPasswordField>
+                  <JFXPasswordField id="tb_signin_pass" fx:id="tb_signin_pass" focusColor="#484d5a" layoutX="48.0" layoutY="183.0" prefHeight="38.0" prefWidth="262.0" promptText="password">
+                     <font>
+                        <Font size="14.0" />
+                     </font></JFXPasswordField>
+                  <JFXButton id="btn_newprofil" fx:id="btn_newprofil" buttonType="RAISED" layoutX="87.0" layoutY="321.0" prefHeight="38.0" prefWidth="210.0" text="Sign In">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <effect>
+                        <Blend />
+                     </effect>
+                  </JFXButton>
+                  <ImageView fitHeight="82.0" fitWidth="99.0" layoutX="291.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/crown_64px.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="73.0" layoutY="26.0" prefHeight="25.0" prefWidth="148.0" text="Go back to Login">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton id="btn_goback" fx:id="btn_goback" buttonType="RAISED" layoutX="-5.0" layoutY="4.0" mnemonicParsing="false" onAction="#goBack" prefHeight="69.0" prefWidth="67.0">
+                     <graphic>
+                        <ImageView>
+                           <image>
+                              <Image url="@/go_back_26px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
