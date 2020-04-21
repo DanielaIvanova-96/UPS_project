@@ -44,7 +44,7 @@
                         <Font size="14.0" />
                      </font>
                   </JFXPasswordField>
-                  <JFXButton id="btn_login" fx:id="btn_login" buttonType="RAISED" layoutX="56.0" layoutY="231.0" onAction="#login" prefHeight="38.0" prefWidth="270.0" text="LogIn">
+                  <JFXButton id="btn_login" fx:id="btn_login" buttonType="RAISED" layoutX="56.0" layoutY="231.0" onAction="#login" prefHeight="38.0" prefWidth="270.0" text="Login">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -62,7 +62,7 @@
                         <Image url="@/crown_100px.png" />
                      </image>
                   </ImageView>
-                  <JFXButton id="btn_signin" fx:id="btn_signin" buttonType="RAISED" layoutX="56.0" layoutY="282.0" onAction="#signin" prefHeight="38.0" prefWidth="270.0" text="SignUp">
+                  <JFXButton id="btn_signin" fx:id="btn_signin" buttonType="RAISED" layoutX="56.0" layoutY="282.0" onAction="#signin" prefHeight="38.0" prefWidth="270.0" text="SignIn">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -86,7 +86,7 @@
                      <font>
                         <Font size="14.0" />
                      </font></JFXPasswordField>
-                  <JFXButton id="btn_newprofil" fx:id="btn_newprofil" buttonType="RAISED" layoutX="87.0" layoutY="321.0" prefHeight="38.0" prefWidth="210.0" text="Sign Up">
+                  <JFXButton id="btn_newprofil" fx:id="btn_newprofil" buttonType="RAISED" layoutX="87.0" layoutY="321.0" prefHeight="38.0" prefWidth="210.0" text="Sign In">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
